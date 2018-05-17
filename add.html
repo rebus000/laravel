@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="indigo accent-4">
+		<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">dehaze</i></a>
+		<div class="nav-wrapper">
+			<a href="index.html" class="brand-logo center">Бюро</a>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="input-field col s6">
+			<i class="material-icons prefix">games</i>
+			<input id="icon_prefix" type="text" class="validate">
+			<label for="icon_prefix">Заголовок объявления</label>
+		</div>
+		<div class="input-field col s6">
+			<i class="material-icons prefix">content_paste</i>
+			<input id="icon_prefix" type="text" class="validate">
+			<label for="icon_prefix">Описание</label>
+		</div>
+		<div class="input-field col s6">
+			<i class="material-icons prefix">error</i>
+			<input id="icon_prefix" type="text" class="validate">
+			<label for="icon_prefix">Пропажа или находка</label>
+		</div>
+		<div class="input-field col s6">
+			<i class="material-icons prefix">contact_phone</i>
+			<input id="icon_prefix" type="text" class="validate">
+			<label for="icon_prefix">Номер или способ связаться</label>
+		</div>
+
+
+	</div>
+
+
+	<ul id="slide-out" class="sidenav">
+
+		<li><a href="found.html"><i class="material-icons">check_circle</i>Найдено</a></li>
+		<li><a href="lost.html"><i class="material-icons">cancel</i>Потеряно</a></li>
+		<li>
+			<div class="divider"></div>
+		</li>
+		<li><a href="add.html"><i class="material-icons">add</i>Добавить объявление</a></li>
+	</ul>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
+		});
+
+	</script>
+</body>
+
+</html>
